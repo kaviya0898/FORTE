@@ -1,0 +1,140 @@
+public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENTER FIRST NUMBER");
+		int first=sc.nextInt();
+		System.out.println("ENTER SECOND NUMBER");
+		int second=sc.nextInt();
+		System.out.println("ENTER THIRD NUMBER");
+		int third=sc.nextInt();
+		System.out.println("ENTER FOURTH NUMBER");
+		int fourth=sc.nextInt();
+		System.out.println("ENTER RESULTANT NUMBER");
+		int resultant=sc.nextInt();
+		boolean bool=false;
+		while(!bool)
+		{
+			int add=second+third+fourth;
+			if((first+add)==resultant)
+			{
+				System.out.println(first+"+"+"("+second+"+"+third+"+"+fourth+")");
+				bool=true;
+			}
+			
+			else if((first-add)==resultant)
+			{
+				System.out.println(first+"-"+"("+second+"+"+third+"+"+fourth+")");
+				bool=true;
+			}
+			
+			else if((first*add)==resultant)
+			{
+				System.out.println(first+"x"+"("+second+"+"+third+"+"+fourth+")");
+				bool=true;
+				
+			}
+			else if((first/add)==resultant)
+			{
+				System.out.println(first+"/"+"("+second+"+"+third+"+"+fourth+")");
+				bool=true;
+				
+			}
+			else
+			{
+				bool=true;
+		
+			}
+
+	}
+		bool=false;
+		while(!bool)
+		{
+			int add2=third+fourth;
+			int add1=first+second;
+			if(((add1)+(add2))==resultant)
+			{
+				System.out.println("("+first+""+"+"+second+")"+"+"+"("+third+"+"+fourth+")");
+				bool=true;
+			}
+			else if(((add1)-(add2))==resultant)
+			{
+				System.out.println("("+first+""+"+"+second+")"+"-"+"("+third+"+"+fourth+")");
+				bool=true;
+			}
+			else if(((add1)*(add2))==resultant)
+			{
+				System.out.println("("+first+""+"+"+second+")"+"x"+"("+third+"+"+fourth+")");
+				bool=true;
+			}
+			else if(((add1)/(add2))==resultant)
+			{
+				System.out.println("("+first+""+"+"+second+")"+"/"+"("+third+"+"+fourth+")");
+				bool=true;
+			}
+			else
+				bool=true;
+		}
+		
+		bool=false;
+		while(!bool)
+		{
+			int add=first+second;
+			if((add+third+fourth)==resultant)
+			{
+				System.out.println(first+"+"+second+"+"+third+"+"+fourth);
+				bool=true;
+			}
+			if((add+third+fourth)==resultant)
+			{
+				System.out.println(first+"+"+second+"+"+third+"-"+fourth);
+				bool=true;
+			}
+			if((add+third+fourth)==resultant)
+			{
+				System.out.println(first+"+"+second+"+"+third+"x"+fourth);
+				bool=true;
+			}
+			if((add+third+fourth)==resultant)
+			{
+				System.out.println(first+"+"+second+"+"+third+"/"+fourth);
+				bool=true;
+			}
+			else
+				bool=true;
+			
+		}
+		bool=false;
+		while(!bool)
+		{
+			int add=third+second;
+			if((add+first+fourth)==resultant)
+			{
+				System.out.println(first+"+"+second+"+"+third+"+"+fourth);
+				bool=true;
+			}
+			if((add+first+fourth)==resultant)
+			{
+				System.out.println(first+"+"+second+"+"+third+"-"+fourth);
+				bool=true;
+			}
+			if((add+first+fourth)==resultant)
+			{
+				System.out.println(first+"+"+second+"+"+third+"x"+fourth);
+				bool=true;
+			}
+			if((add+first+fourth)==resultant)
+			{
+				System.out.println(first+"+"+second+"+"+third+"/"+fourth);
+				bool=true;
+			}
+			else
+				bool=true;
+			
+		}
+		
+	}
+	
+	
+
+
+}
+
